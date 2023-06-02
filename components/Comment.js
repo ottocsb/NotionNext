@@ -91,7 +91,7 @@ const Comment = ({ frontMatter }) => {
 
         {BLOG.COMMENT_GISCUS_REPO && (
           <div key="Giscus">
-            <GiscusComponent className="px-2 overflow-y-scroll scrollbar-none" />
+            <GiscusComponent className="px-2" />
           </div>
         )}
 
