@@ -1,5 +1,6 @@
 const CONFIG_HEXO = {
   HOME_BANNER_ENABLE: true,
+  // 3.14.1以后的版本中，欢迎语在blog.config.js中配置，用英文逗号','隔开多个。
   HOME_BANNER_GREETINGS: ['Hey，我是一个神经病', 'Hey，我是一个Cryptoer', 'Hey，我是一个撸狗', '非礼勿视'], // 首页大图标语文字
 
   HOME_NAV_BUTTONS: true, // 首页是否显示分类大图标按钮
