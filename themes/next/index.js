@@ -11,7 +11,6 @@ import TopNav from './components/TopNav'
 import { useGlobal } from '@/lib/global'
 import { useEffect, useRef, useState } from 'react'
 import BLOG from '@/blog.config'
-import Header from './components/Header'
 import BlogPostListScroll from './components/BlogPostListScroll'
 import BlogPostListPage from './components/BlogPostListPage'
 import StickyBar from './components/StickyBar'
@@ -96,9 +95,9 @@ const LayoutBase = (props) => {
                         appear={true}
                         enter="transition ease-in-out duration-700 transform order-first"
                         enterFrom="opacity-0 translate-y-16"
-                        enterTo="opacity-100 translate-y-0"
+                        enterTo="opacity-100"
                         leave="transition ease-in-out duration-300 transform"
-                        leaveFrom="opacity-100 translate-y-0"
+                        leaveFrom="opacity-100"
                         leaveTo="opacity-0 -translate-y-16"
                         unmount={false}
                     >
@@ -133,7 +132,7 @@ const LayoutBase = (props) => {
  * @returns
  */
 const LayoutIndex = (props) => {
-  return <LayoutPostList headerSlot={CONFIG.HOME_BANNER && <Header {...props} />} {...props} />
+  return <LayoutPostList {...props} />
 }
 
 /**

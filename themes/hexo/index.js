@@ -59,9 +59,9 @@ const LayoutBase = props => {
                 appear={true}
                 enter="transition ease-in-out duration-700 transform order-first"
                 enterFrom="opacity-0 -translate-y-16"
-                enterTo="opacity-100 translate-y-0"
+                enterTo="opacity-100"
                 leave="transition ease-in-out duration-300 transform"
-                leaveFrom="opacity-100 translate-y-0"
+                leaveFrom="opacity-100"
                 leaveTo="opacity-0 translate-y-16"
                 unmount={false}
             >
@@ -69,7 +69,7 @@ const LayoutBase = props => {
             </Transition>
 
             {/* 主区块 */}
-            <main id="wrapper" className={`${CONFIG.HOME_BANNER_ENABLE ? '' : 'pt-16'} overflow-x-hidden bg-hexo-background-gray dark:bg-black w-full py-8 md:px-8 lg:px-24 min-h-screen relative`}>
+            <main id="wrapper" className={`${CONFIG.HOME_BANNER_ENABLE ? '' : 'pt-16'} bg-hexo-background-gray dark:bg-black w-full py-8 md:px-8 lg:px-24 min-h-screen relative`}>
                 <div id="container-inner" className={(BLOG.LAYOUT_SIDEBAR_REVERSE ? 'flex-row-reverse' : '') + ' w-full mx-auto lg:flex lg:space-x-4 justify-center relative z-10'} >
                     <div className={`${className || ''} w-full max-w-4xl h-full `}>
 
